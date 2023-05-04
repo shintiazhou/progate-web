@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+
+  h2 {
+    @apply text-xl;
+    @apply font-bold;
+  }
+
+  h3 {
+    @apply text-lg;
+    @apply font-semibold;
+  }
+
+  h4 {
+    @apply text-base;
+    @apply font-semibold;
+  }
+
+  p,
+  div {
+    @apply text-sm;
+  }
+}
