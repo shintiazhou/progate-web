@@ -12,6 +12,7 @@
 
 <button
   class={`transition-all hover:scale-105 px-4 py-2 rounded ${bgColorClass} ${customClass}`}
+  {...$$props}
 >
   <slot />
 </button>

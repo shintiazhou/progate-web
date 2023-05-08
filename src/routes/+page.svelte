@@ -1,5 +1,10 @@
 <script>
-  import Intro from "../components/Intro.svelte";
+  import Features from "../components/homepage/Features.svelte";
+  import Hero from "../components/homepage/Hero.Svelte";
+  import Info from "../components/homepage/Info.svelte";
+  import Subscribe from "../components/homepage/Subscribe.svelte";
+  import Testimony from "../components/homepage/Testimony.svelte";
+  import Images from "../lib/logos/Images.svelte";
 </script>
 
 <svelte:head>
@@ -10,8 +15,16 @@
   />
 </svelte:head>
 
-<section class="container mx-auto p-4">
-  <h1>This is homepage</h1>
-  <!-- feel free to replace with your code -->
-  <Intro />
-</section>
+<div class="overflow-hidden">
+  <Hero />
+  <section class="container mx-auto py-10">
+    <h1 data-aos="fade-up" class="text-center text-secondary font-semibold">
+      Collaborating with top-tier companies
+    </h1>
+    <Images />
+  </section>
+  <Info />
+  <Features />
+  <Testimony />
+  <Subscribe />
+</div>

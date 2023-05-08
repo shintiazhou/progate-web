@@ -7,6 +7,17 @@ html {
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+.scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   h1 {
     @apply text-2xl;
@@ -32,4 +43,10 @@ html {
   div {
     @apply text-sm;
   }
+}
+input[type="text"] {
+  padding: 10px;
+  color: #333333;
+  outline: none;
+  border-radius: "10px";
 }
