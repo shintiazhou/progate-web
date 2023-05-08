@@ -1,9 +1,17 @@
+<script>
+  import Intro from "../components/Intro.svelte";
+</script>
+
 <svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
+  <title>Homepage | Progate</title>
+  <meta
+    name="description"
+    content="Progate is an online learning platform that offers various courses on programming, web development, and more."
+  />
 </svelte:head>
 
-<section class="container mx-auto bg-blue-50 p-5">
+<section class="container mx-auto p-4">
   <h1>This is homepage</h1>
-  <a href="/about" class="underline">Go to about page</a>
+  <!-- feel free to replace with your code -->
+  <Intro />
 </section>
