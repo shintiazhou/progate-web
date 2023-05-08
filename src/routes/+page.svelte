@@ -1,6 +1,6 @@
 <script>
   import Features from "../components/homepage/Features.svelte";
-  import Hero from "../components/homepage/Hero.Svelte";
+  import Hero from "../components/homepage/Hero.svelte";
   import Info from "../components/homepage/Info.svelte";
   import Subscribe from "../components/homepage/Subscribe.svelte";
   import Testimony from "../components/homepage/Testimony.svelte";
