@@ -1,38 +1,41 @@
-# create-svelte
+## Svelte Installation Steps
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+1. **Install Git:**
+   - Download and install Git from the official website: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
-## Creating a project
+2. **Install Node.js:**
+   - Download and install Node.js from the official website: [https://nodejs.org](https://nodejs.org)
+   - Choose the LTS (Long-Term Support) version for stability.
 
-If you're seeing this, you've probably already done this step. Congrats!
+3. **Verify Git and Node.js Installation:**
+   - Open a command prompt or terminal and run the following commands to verify the installations:
+     ```shell
+     git --version
+     node --version
+     npm --version
+     ```
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+4. **Clone the GitHub Repository:**
+   - Change to the directory where you want to clone the repository.
+   - Run the following command to clone the repository:
+     ```shell
+     git clone https://github.com/shintiazhou/progate-web.git
+     ```
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+5. **Install Project Dependencies:**
+   - Open the project inside vscode, open new terminal, and Run the following command
+     ```shell
+     npm install
+     ```
 
-## Developing
+6. **Start the Development Server:**
+   - After the dependencies are installed, run the following command to start the development server:
+     ```shell
+     npm run dev
+     ```
+   - The development server will start, and you can access the application in your web browser at `http://localhost:5173/`.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+7. **Working on project:**
+   - You can read more at https://reuters-graphics.github.io/docs_graphics-kit/for_developers/components/
+   - For styling we use Tailwind Css , so check out https://tailwindcss.com/ for further docs
