@@ -27,8 +27,8 @@
      ```shell
      npm install
      ```
-
-6. **Start the Development Server:**
+6. **Install [svelte extensions](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)**
+7. **Start the Development Server:**
    - After the dependencies are installed, run the following command to start the development server:
      ```shell
      npm run dev
@@ -36,6 +36,19 @@
    - The development server will start, and you can access the application in your web browser at `http://localhost:5173/`.
 
 
-7. **Working on project:**
+8. **Working on project:**
    - You can read more at https://reuters-graphics.github.io/docs_graphics-kit/for_developers/components/
    - For styling we use Tailwind Css , so check out https://tailwindcss.com/ for further docs
+   - In short, to work on new page you can create a folder inside routes folder, create file called +page.svelte and you're ready to write your code!
+   
+9. **Working with git & github:**
+   - Before you push the changes, make sure you create a new branch
+   for example: ![image](https://user-images.githubusercontent.com/73226439/236714647-1bc2fb46-a5d7-4fba-96ef-6117f979b594.png)
+   - After you're done with your part, create commit msg and push.
+   
+   ![image](https://user-images.githubusercontent.com/73226439/236714933-42c3b58b-7f9c-4f91-ba16-7be6ae20b0b9.png)
+   
+   ![image](https://user-images.githubusercontent.com/73226439/236714944-c9ad0bbc-840e-42a9-b5d4-69c97d99b8f5.png)
+
+
+ 
