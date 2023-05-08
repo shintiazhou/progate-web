@@ -1,0 +1,1 @@
+<header class="bg-primary py-4 px-10">This is header</header>

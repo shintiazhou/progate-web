@@ -1,0 +1,1 @@
+<footer class="border px-10 py-4">This is footer</footer>
