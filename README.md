@@ -16,11 +16,14 @@
      ```
 
 4. **Clone the GitHub Repository:**
-   - Change to the directory where you want to clone the repository.
+   - Change to the directory where you want to clone the repository, right click -> open in new terminal.
    - Run the following command to clone the repository:
      ```shell
      git clone https://github.com/shintiazhou/progate-web.git
      ```
+     ![image](https://user-images.githubusercontent.com/73226439/236715386-5f740a6f-e6f8-4b3f-8508-4ba0f9a11280.png)
+![image](https://user-images.githubusercontent.com/73226439/236715442-9e357fc0-7874-407e-9d72-4b3bb4f9858d.png)
+
 
 5. **Install Project Dependencies:**
    - Open the project inside vscode, open new terminal, and Run the following command
