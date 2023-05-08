@@ -6,7 +6,12 @@
 2. **Install Node.js:**
    - Download and install Node.js from the official website: [https://nodejs.org](https://nodejs.org)
    - Choose the LTS (Long-Term Support) version for stability.
-
+   - 
+2. **Install NPM:**
+   - Open command prompt, paste 
+     ```shell
+     npm install -g npm
+     ```
 3. **Optional: Verify Git and Node.js Installation:**
    - Open a command prompt or terminal and run the following commands to verify the installations:
      ```shell
