@@ -43,7 +43,9 @@
   }
 </script>
 
-<section class="mx-auto text-center my-20 transition-all max-w-[600px]">
+<section
+  class="mx-auto text-center my-20 transition-all max-w-[600px] px-4 md:px-10"
+>
   <h1 data-aos="fade-up">Why people love Progate</h1>
   <div
     data-aos="fade-up"
@@ -65,7 +67,7 @@
   <div data-aos="fade-up" data-aos-delay={400}>
     <p>{testimonials[activeIndex].description}</p>
     <br />
-    <p>{testimonials[activeIndex].username}</p>
+    <strong>{testimonials[activeIndex].username}</strong><br />
     <small>{testimonials[activeIndex].job}</small>
   </div>
 </section>
