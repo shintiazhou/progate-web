@@ -3,8 +3,8 @@
 </script>
 
 <div class="app">
-  <main>
-    this is layout okay
+  <main class="bg-red-200 p-10">
+    this is layout
     <slot />
   </main>
 </div>
