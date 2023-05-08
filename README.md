@@ -7,7 +7,7 @@
    - Download and install Node.js from the official website: [https://nodejs.org](https://nodejs.org)
    - Choose the LTS (Long-Term Support) version for stability.
 
-3. **Verify Git and Node.js Installation:**
+3. **Optional: Verify Git and Node.js Installation:**
    - Open a command prompt or terminal and run the following commands to verify the installations:
      ```shell
      git --version
