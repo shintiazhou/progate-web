@@ -3,13 +3,6 @@
   "short_name": "Progate",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "icons": [
-    {
-      "src": "/favicon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+  "theme_color": "#2B546A",
+  "background_color": "#ffffff"
 }
