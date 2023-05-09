@@ -60,7 +60,7 @@
 </script>
 
 {#each articles as item, index}
-  <a href={(allowEdit ? "/edit/" : "/articles/") + (index + 1)}>
+  <a href={(allowEdit ? "/creator/edit/" : "/articles/") + (index + 1)}>
     <div
       class="flex flex-col xl:flex-row py-3 my-4 bg-white border-b border-gray-300 gap-4 cursor-pointer"
     >
@@ -89,7 +89,7 @@
               </ul>
             </div>
             {#if allowEdit}
-              <a class="ml-auto" href={"/edit/" + (index + 1)}>
+              <a class="ml-auto" href={"/creator/edit/" + (index + 1)}>
                 <div
                   class="bg-secondary text-white rounded-md p-2 flex items-center justify-center"
                 >

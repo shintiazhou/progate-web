@@ -39,7 +39,7 @@
   <a href="/">
     <img src={logo} alt="logo" class="w-[100px] h-[30px] object-contain" />
   </a>
-  <a href="/new"><Button color="secondary">Start writing</Button></a>
+  <a href="/creator/new"><Button color="secondary">Start writing</Button></a>
   {#each routes as category}
     <small>
       {category.category}

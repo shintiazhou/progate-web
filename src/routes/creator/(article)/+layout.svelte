@@ -1,5 +1,5 @@
 <script>
-  import ArticleSidebar from "../../components/creator/ArticleSidebar.svelte";
+  import ArticleSidebar from "../../../components/creator/ArticleSidebar.svelte";
 </script>
 
 <div>

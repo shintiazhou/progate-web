@@ -10,6 +10,8 @@
   });
 </script>
 
-<div class="app pt-12">
-  <slot />
+<div>
+  <main class="bg-light pt-12">
+    <slot />
+  </main>
 </div>

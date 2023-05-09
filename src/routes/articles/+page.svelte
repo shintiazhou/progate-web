@@ -6,6 +6,7 @@
   import Levels from "../../components/articles/Levels.svelte";
   import Writers from "../../components/articles/Writers.svelte";
   import SearchHeader from "../../components/SearchHeader.svelte";
+  import Footer from "../../components/Footer.svelte";
 </script>
 
 <SearchHeader />
@@ -27,3 +28,4 @@
     <Discussion />
   </div>
 </div>
+<Footer />
