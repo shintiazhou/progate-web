@@ -13,7 +13,7 @@
 
 <div class="app">
   <Header />
-  <main class="bg-light">
+  <main class="bg-light pt-12">
     <slot />
   </main>
   <Footer />
