@@ -1,5 +1,7 @@
 <script>
   import icon from "../lib/Icon.png";
+
+  let isLoggedIn = localStorage.getItem("logged-in");
 </script>
 
 <header
@@ -21,16 +23,24 @@
       />
     </div>
   </div>
-
-  <a
-    href="/creator"
-    class="cursor-pointer flex items-center gap-2 hover:bg-gray-700 hover:text-white text-black font-medium p-2 px-4 border border-black hover:border-transparent rounded-full"
-  >
-    <img
-      class="rounded-full cursor-pointer"
-      src="https://picsum.photos/id/23/25/25"
-      alt="woman in tech"
-    />
-    Woman in tech
-  </a>
+  {#if isLoggedIn}
+    <a
+      href="/creator"
+      class="cursor-pointer flex items-center gap-2 hover:bg-gray-700 hover:text-white text-black font-medium p-2 px-4 border border-black hover:border-transparent rounded-full"
+    >
+      <img
+        class="rounded-full cursor-pointer"
+        src="https://picsum.photos/id/23/25/25"
+        alt="woman in tech"
+      />
+      Woman in tech
+    </a>
+  {:else}
+    <a
+      href="/login"
+      class="cursor-pointer flex items-center gap-2 hover:bg-gray-700 hover:text-white text-black font-medium p-2 px-4 border border-black hover:border-transparent rounded-full"
+    >
+      Login
+    </a>
+  {/if}
 </header>

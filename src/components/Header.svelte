@@ -1,5 +1,6 @@
 <script>
   import logo from "../lib/Logo.png";
+  let isLoggedIn = localStorage.getItem("logged-in");
   const routes = [
     {
       href: "/articles",
@@ -13,13 +14,9 @@
       href: "/pricing",
       title: "Pricing",
     },
-    {
-      href: "/contact",
-      title: "Contact",
-    },
   ];
 
-  export let isOpen = false;
+  let isOpen = false;
 
   function toggleMenu() {
     isOpen = !isOpen;
@@ -88,12 +85,26 @@
       >
     {/each}
   </div>
-  <a
-    href="/login"
-    class="bg-transparent hover:bg-gray-700 hover:text-white text-black font-medium py-2 px-5 md:px-10 border border-black hover:border-transparent rounded"
-  >
-    Sign In
-  </a>
+  {#if isLoggedIn}
+    <a
+      href="/creator"
+      class="cursor-pointer flex items-center gap-2 hover:bg-gray-700 hover:text-white text-black font-medium p-2 px-4 border border-black hover:border-transparent rounded-full"
+    >
+      <img
+        class="rounded-full cursor-pointer"
+        src="https://picsum.photos/id/23/25/25"
+        alt="woman in tech"
+      />
+      Woman in tech
+    </a>
+  {:else}
+    <a
+      href="/login"
+      class="cursor-pointer flex items-center gap-2 hover:bg-gray-700 hover:text-white text-black font-medium p-2 px-4 border border-black hover:border-transparent rounded-full"
+    >
+      Login
+    </a>
+  {/if}
 </header>
 
 <style>

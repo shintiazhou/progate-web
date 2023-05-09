@@ -1,5 +1,5 @@
 <script>
-  export const writersToFollow = [
+  const writersToFollow = [
     {
       id: 12345,
       name: "John Doe",

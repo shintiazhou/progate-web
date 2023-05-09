@@ -9,6 +9,6 @@
     <hr />
     <br />
     <strong>Latest Post</strong>
-    <ArticleItems />
+    <ArticleItems allowEdit />
   </div>
 </div>

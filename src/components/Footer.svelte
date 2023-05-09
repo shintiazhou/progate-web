@@ -15,10 +15,6 @@
       href: "/pricing",
       title: "Pricing",
     },
-    {
-      href: "/contact",
-      title: "Contact",
-    },
   ];
 </script>
 

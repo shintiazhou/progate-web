@@ -1,5 +1,5 @@
 <script>
-  export const yourTopics = [
+  const yourTopics = [
     "React",
     "Nextjs",
     "Tailwind",

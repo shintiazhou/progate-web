@@ -3,7 +3,9 @@
   import FaCrown from "svelte-icons/fa/FaCrown.svelte";
   import MdBookmark from "svelte-icons/md/MdBookmark.svelte";
   import MdBookmarkBorder from "svelte-icons/md/MdBookmarkBorder.svelte";
-  export const articles = [
+  import MdEdit from "svelte-icons/md/MdEdit.svelte";
+  export let allowEdit;
+  const articles = [
     {
       author: "John Doe",
       authorProfilePicture: "https://www.example.com/profile/johndoe.jpg",
@@ -58,7 +60,7 @@
 </script>
 
 {#each articles as item, index}
-  <a href={"/articles/" + (index + 1)}>
+  <a href={(allowEdit ? "/creator/edit/" : "/articles/") + (index + 1)}>
     <div
       class="flex flex-col xl:flex-row py-3 my-4 bg-white border-b border-gray-300 gap-4 cursor-pointer"
     >
@@ -86,7 +88,18 @@
                 <li>{item.durationToRead} read</li>
               </ul>
             </div>
-            {#if item.isPremium}
+            {#if allowEdit}
+              <a class="ml-auto" href={"/creator/edit/" + (index + 1)}>
+                <div
+                  class="bg-secondary text-white rounded-md p-2 flex items-center justify-center"
+                >
+                  Edit <span class="w-[20px] h-[20px] ml-2">
+                    <MdEdit />
+                  </span>
+                </div>
+              </a>
+            {/if}
+            {#if item.isPremium && !allowEdit}
               <div class="ml-auto">
                 <div
                   class="bg-[#FACE2E] text-white rounded-md p-2 flex items-center justify-center"

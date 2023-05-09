@@ -6,7 +6,7 @@
   import gajahMada from "./gajah-mada.png";
   import gojek from "./gojek.png";
 
-  export const images = [bakti, binus, cfds, cicil, gajahMada, gojek];
+  const images = [bakti, binus, cfds, cicil, gajahMada, gojek];
 </script>
 
 <div class=" gap-2 mt-10 overflow-x-scroll w-full px-10 scrollbar">

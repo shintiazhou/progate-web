@@ -38,7 +38,7 @@
     },
   ];
 
-  export function handleSetIndex(index) {
+  function handleSetIndex(index) {
     activeIndex = index;
   }
 </script>
