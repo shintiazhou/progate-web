@@ -6,7 +6,7 @@
 </script>
 
 <div
-  class="flex flex-col justify-between bg-secondary text-light p-4 rounded-xl"
+  class="flex flex-col justify-between bg-secondary text-light p-4 rounded-xl max-w-[400px] mx-auto"
 >
   <div class="top">
     <h1 class="mb-4">Basic</h1>

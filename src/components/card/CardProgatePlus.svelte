@@ -7,7 +7,7 @@
 </script>
 
 <div
-  class="flex flex-col justify-between bg-white text-dark p-4 rounded-xl lg:scale-[1.05]"
+  class="flex flex-col justify-between bg-white text-dark p-4 rounded-xl lg:scale-[1.05] shadow max-w-[400px] mx-auto"
 >
   <div class="top">
     <h1 class="mb-4">Progate Plus</h1>

@@ -12,10 +12,10 @@
   />
 </svelte:head>
 
-<main class="background item-center py-9">
-  <section class="container mx-auto max-w-[95%] lg:max-w-[900px]">
-    <h3 class="text-center text-light">Pricing Plan</h3>
-    <h1 class="text-center text-light">Elevate Your Learning Experience</h1>
+<main class="background item-center py-9 min-h-screen bg-cover">
+  <section class="text-light container mx-auto max-w-[95%] lg:max-w-[900px]">
+    <h3 class="text-center text-regular">Pricing Plan</h3>
+    <h1 class="text-center text-regular">Elevate Your Learning Experience</h1>
     <div class="flex flex-col lg:grid grid-cols-3 mx-auto gap-8 my-9">
       <CardBasic />
       <CardProgatePlus />
