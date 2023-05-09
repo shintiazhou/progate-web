@@ -26,7 +26,7 @@
   {#each writersToFollow as writer, index}
     <a
       class="flex items-center mb-3 hover:opacity-60"
-      href={"/writer" + (index + 1)}
+      href={"/writer/" + (index + 1)}
     >
       <div class="w-12 h-12 rounded-full overflow-hidden mr-4 mb-1">
         <img

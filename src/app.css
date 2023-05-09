@@ -44,7 +44,7 @@ html {
     @apply text-sm;
   }
 }
-input[type="text"] {
+input {
   padding: 10px;
   color: #333333;
   outline: none;
