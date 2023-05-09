@@ -11,7 +11,7 @@
 </script>
 
 <div>
-  <main class="bg-light pt-12">
+  <main class="pt-12">
     <slot />
   </main>
 </div>

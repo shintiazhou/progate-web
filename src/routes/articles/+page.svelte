@@ -9,6 +9,14 @@
   import Footer from "../../components/Footer.svelte";
 </script>
 
+<svelte:head>
+  <title>Creator | Progate</title>
+  <meta
+    name="description"
+    content="Discover and explore the Progate Creator program, where you can build and share your own coding projects with the community."
+  />
+</svelte:head>
+
 <SearchHeader />
 <div class="bg-white flex px-4 gap-10">
   <div class="flex-col w-2/10 hidden lg:flex max-w-[300px] px-6 gap-6 mt-10">

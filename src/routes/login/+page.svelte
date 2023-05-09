@@ -23,6 +23,14 @@
   });
 </script>
 
+<svelte:head>
+  <title>Login | Progate</title>
+  <meta
+    name="description"
+    content="Log in to your Progate account and access the online learning platform for programming, web development, and more."
+  />
+</svelte:head>
+
 <div class="bg-primary fixed inset-0 z-10 w-full h-full flex">
   <img
     src="https://picsum.photos/id/48/700/700"
