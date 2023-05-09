@@ -26,6 +26,6 @@
 
 <style>
   .background {
-    background-image: url("../../lib/bg.jpg");
+    background-image: url("../../../lib/bg.jpg");
   }
 </style>
