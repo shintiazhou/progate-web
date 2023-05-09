@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import Sidebar from "../../components/creator/Sidebar.svelte";
+  import Sidebar from "../../../components/creator/Sidebar.svelte";
   onMount(() => {
     const isLoggedIn = localStorage.getItem("logged-in");
 

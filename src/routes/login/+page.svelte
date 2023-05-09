@@ -1,4 +1,5 @@
 <script>
+  import logo from "../../lib/Logo.png";
   import Button from "../../components/Button.svelte";
   import { goto } from "$app/navigation";
   export let state = { email: "", password: "" };
@@ -24,7 +25,7 @@
     on:submit={handleSubmit}
     class="flex flex-col mx-auto gap-6 justify-center w-full max-w-[500px] px-10"
   >
-    <img src="/Logo.png" alt="Logo" class="w-fit self-center" />
+    <img src={logo} alt="Logo" class="w-fit self-center" />
     <h1>Login</h1>
     <input
       type="text"

@@ -1,7 +1,7 @@
 <script>
-  import CardBasic from "../../components/card/CardBasic.svelte";
-  import CardProgatePlus from "../../components/card/CardProgatePlus.svelte";
-  import CardProgateForWriters from "../../components/card/CardProgateForWriters.svelte";
+  import CardBasic from "../../../components/card/CardBasic.svelte";
+  import CardProgatePlus from "../../../components/card/CardProgatePlus.svelte";
+  import CardProgateForWriters from "../../../components/card/CardProgateForWriters.svelte";
 </script>
 
 <svelte:head>
