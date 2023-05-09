@@ -1,6 +1,4 @@
 <script>
-  import FaHome from "svelte-icons/fa/FaHome.svelte";
-  import FaSearch from "svelte-icons/fa/FaSearch.svelte";
   import Discussion from "../../components/articles/Discussions.svelte";
   import Topics from "../../components/articles/Topics.svelte";
   import ArticleItems from "../../components/articles/ArticleItems.svelte";
@@ -9,7 +7,7 @@
   import Writers from "../../components/articles/Writers.svelte";
 </script>
 
-<div
+<!-- <div
   class="bg-primary flex flex-col md:flex-row items-center justify-between flex-wrap py-3 px-10 transition-all"
 >
   <div class="flex items-center flex-shrink-0 md:mr-6">
@@ -40,7 +38,7 @@
       Sign In
     </a>
   </div>
-</div>
+</div> -->
 
 <div class="bg-white flex px-4 gap-10">
   <div class="flex-col w-2/10 hidden lg:flex max-w-[300px] px-6 gap-6 mt-10">

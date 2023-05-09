@@ -1,5 +1,4 @@
 <script>
-  import gojek from "../lib/logos/gojek.png";
   import FaTwitter from "svelte-icons/fa/FaTwitter.svelte";
   import FaFacebookF from "svelte-icons/fa/FaFacebookF.svelte";
   import FaInstagram from "svelte-icons/fa/FaInstagram.svelte";
@@ -35,18 +34,6 @@
           >{route.title}</a
         >
       {/each}
-    </div>
-    <div class="flex items-center">
-      <img
-        src={gojek}
-        alt="gojek"
-        class="w-[100px] h-[30px] object-contain mr-6 cursor-pointer"
-      />
-      <img
-        src={gojek}
-        alt="gojek"
-        class="w-[100px] h-[30px] object-contain cursor-pointer"
-      />
     </div>
   </div>
 
