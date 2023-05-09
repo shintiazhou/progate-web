@@ -1,6 +1,12 @@
 <script>
+  import { onMount } from "svelte";
   import logo from "../lib/Logo.png";
-  let isLoggedIn = localStorage.getItem("logged-in");
+  let isLoggedIn = false;
+
+  onMount(() => {
+    isLoggedIn = localStorage.getItem("logged-in");
+  });
+
   const routes = [
     {
       href: "/articles",

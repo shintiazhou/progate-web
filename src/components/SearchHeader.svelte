@@ -1,7 +1,10 @@
 <script>
   import icon from "../lib/Icon.png";
+  let isLoggedIn = false;
 
-  let isLoggedIn = localStorage.getItem("logged-in");
+  onMount(() => {
+    isLoggedIn = localStorage.getItem("logged-in");
+  });
 </script>
 
 <header
