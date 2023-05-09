@@ -44,7 +44,7 @@
 </script>
 
 <section
-  class="mx-auto text-center my-20 transition-all max-w-[600px] px-4 md:px-10"
+  class="mx-auto text-center my-[200px] transition-all max-w-[600px] px-4 md:px-10"
 >
   <h1 data-aos="fade-up">Why people love Progate</h1>
   <div

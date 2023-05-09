@@ -17,7 +17,7 @@
 
 <div class="overflow-hidden">
   <Hero />
-  <section class="container mx-auto py-10">
+  <section class="container mx-auto py-[100px]">
     <h1 data-aos="fade-up" class="text-center text-secondary font-semibold">
       Collaborating with top-tier companies
     </h1>
