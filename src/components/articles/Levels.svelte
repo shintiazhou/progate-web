@@ -1,7 +1,7 @@
 <script>
-  export let selectedLevel = 0;
+  let selectedLevel = 0;
 
-  export const levels = ["Beginner", "Intermediate", "Advance"];
+  const levels = ["Beginner", "Intermediate", "Advance"];
 </script>
 
 <div class="w-full flex flex-col items-start bg-slate-50 p-4 rounded-lg">

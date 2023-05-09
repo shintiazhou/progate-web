@@ -2,16 +2,25 @@
   import logo from "../../lib/Logo.png";
   import Button from "../../components/Button.svelte";
   import { goto } from "$app/navigation";
-  export let state = { email: "", password: "" };
+  let state = { email: "", password: "" };
   $: {
     state.disabled = state.email === "" || state.password === "";
   }
-  export const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     window.localStorage.setItem("logged-in", true);
     goto("/creator");
   };
+
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    const isLoggedIn = localStorage.getItem("logged-in");
+    if (isLoggedIn) {
+      goto("/creator");
+    }
+  });
 </script>
 
 <div class="bg-primary fixed inset-0 z-10 w-full h-full flex">

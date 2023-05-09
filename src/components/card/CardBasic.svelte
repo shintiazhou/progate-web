@@ -6,6 +6,8 @@
 </script>
 
 <div
+  data-aos-delay="400"
+  data-aos="fade-up"
   class="flex flex-col justify-between bg-secondary text-light p-4 rounded-xl max-w-[400px] mx-auto"
 >
   <div class="top">

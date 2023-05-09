@@ -1,6 +1,6 @@
 <script>
-  export let selectedCategory = 0;
-  export const categories = ["Recommendation", "Latest", "Trending"];
+  let selectedCategory = 0;
+  const categories = ["Recommendation", "Latest", "Trending"];
 </script>
 
 <div class="py-5 border-b border-gray-300">

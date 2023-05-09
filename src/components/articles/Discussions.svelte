@@ -1,5 +1,5 @@
 <script>
-  export const discussion = [
+  const discussion = [
     "Code documentation: Who needs it anyway?",
     "Data structures: Just pick one and hope for the best",
     "Debugging: Because bugs are our best friends",

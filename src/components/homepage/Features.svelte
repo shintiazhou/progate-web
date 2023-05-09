@@ -1,5 +1,5 @@
 <script>
-  export const features = [
+  const features = [
     {
       title: "Comprehensive Resources",
       desc: "Progate's Programming Knowledge Platform offers a comprehensive range of articles, tutorials, and resources related to programming and technology, all in one place for learners who prefer reading.",
