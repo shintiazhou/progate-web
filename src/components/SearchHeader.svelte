@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import icon from "../lib/Icon.png";
   let isLoggedIn = false;
 
@@ -29,14 +30,14 @@
   {#if isLoggedIn}
     <a
       href="/creator"
-      class="cursor-pointer flex items-center gap-2 hover:bg-gray-700 hover:text-white text-black font-medium p-2 px-4 border border-black hover:border-transparent rounded-full"
+      class="cursor-pointer flex items-center gap-2 hover:bg-gray-700 hover:text-white text-black font-medium p-2 md:px-4 md:border border-black hover:border-transparent rounded-full"
     >
       <img
         class="rounded-full cursor-pointer"
-        src="https://picsum.photos/id/23/25/25"
+        src="https://picsum.photos/id/23/30/30"
         alt="woman in tech"
       />
-      Woman in tech
+      <p class="hidden md:block">Woman in tech</p>
     </a>
   {:else}
     <a

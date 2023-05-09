@@ -2,6 +2,8 @@
   import CardBasic from "../../../components/card/CardBasic.svelte";
   import CardProgatePlus from "../../../components/card/CardProgatePlus.svelte";
   import CardProgateForWriters from "../../../components/card/CardProgateForWriters.svelte";
+  import Header from "../../../components/Header.svelte";
+  import Footer from "../../../components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -11,7 +13,7 @@
     content="Progate is an online learning platform that offers various courses on programming, web development, and more."
   />
 </svelte:head>
-
+<Header />
 <main class="background item-center py-9 min-h-screen bg-cover">
   <section class="text-light container mx-auto max-w-[95%] lg:max-w-[900px]">
     <h3
@@ -31,6 +33,7 @@
     </div>
   </section>
 </main>
+<Footer />
 
 <style>
   .background {
