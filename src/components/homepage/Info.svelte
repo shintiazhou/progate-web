@@ -18,7 +18,7 @@
   >
     <strong class="text-lg md:text-2xl">{info.simplifyLearning.title}</strong>
     <p class="md:text-xl">
-      {info.subtitle}
+      {info.simplifyLearning.description}
     </p>
   </div>
 </section>
