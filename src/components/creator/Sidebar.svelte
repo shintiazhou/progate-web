@@ -34,29 +34,36 @@
 </script>
 
 <aside
-  class="flex flex-col gap-4 bg-white fixed inset-y-0 left-0 h-screen overflow-hidden px-4 py-10 shadow w-[300px] text-lg"
+  class="flex flex-col bg-white fixed inset-y-0 left-0 h-full px-4 py-10 shadow w-[300px] text-base overflow-hidden"
 >
   <a href="/">
     <img src={logo} alt="logo" class="w-[100px] h-[30px] object-contain" />
   </a>
-  <a href="/creator/new"><Button color="secondary">Start writing</Button></a>
-  {#each routes as category}
-    <small>
-      {category.category}
-    </small>
-    {#each category.items as item}
-      <a class="text-lg ml-4 font-semibold hover:text-blue-500" href={item.href}
-        >{item.title}</a
-      >
+
+  <a href="/creator/new" class="block my-6"
+    ><Button color="secondary">Start writing</Button></a
+  >
+  <div class="overflow-y-scroll flex flex-col gap-4 scrollbar">
+    {#each routes as category}
+      <small>
+        {category.category}
+      </small>
+      {#each category.items as item}
+        <a
+          class="text-base ml-4 font-semibold hover:text-blue-500"
+          href={item.href}>{item.title}</a
+        >
+      {/each}
     {/each}
-  {/each}
-  <div class="absolute bottom-0 py-6 border-t">
+  </div>
+  <div class="h-[140px] w-full" />
+  <div class="absolute bottom-0 py-6 border-t bg-white left-0 px-4 w-full">
     <div>
-      <strong class="text-lg"> Tech savvy sisters </strong>
+      <strong class="text-base"> Tech savvy sisters </strong>
       <p>woman_in_tech@wpu.com</p>
       <button
         on:click={handleLogout}
-        class="font-medium mt-3 cursor-pointer opacity-50 underline text-lg"
+        class="font-medium mt-3 cursor-pointer opacity-50 underline text-base"
       >
         Logout
       </button>
