@@ -4,59 +4,8 @@
   import MdBookmark from "svelte-icons/md/MdBookmark.svelte";
   import MdBookmarkBorder from "svelte-icons/md/MdBookmarkBorder.svelte";
   import MdEdit from "svelte-icons/md/MdEdit.svelte";
+  import { articles } from "../../constants/article";
   export let allowEdit;
-  const articles = [
-    {
-      author: "John Doe",
-      authorProfilePicture: "https://www.example.com/profile/johndoe.jpg",
-      articleCoverPicture: "https://picsum.photos/id/101/400/400",
-      durationToRead: "10 minutes",
-      title: "Introduction to JavaScript",
-      description: "Learn the basics of JavaScript programming language.",
-      tags: ["JavaScript", "Programming", "Web Development"],
-      isPremium: false,
-      isSaved: false,
-      releaseDate: "2023-05-01",
-    },
-    {
-      author: "Jane Smith",
-      authorProfilePicture: "https://www.example.com/profile/janesmith.jpg",
-      articleCoverPicture: "https://picsum.photos/id/102/400/400",
-      durationToRead: "8 minutes",
-      title: "Python Tips and Tricks",
-      description:
-        "Discover useful tips and tricks for efficient Python programming.",
-      tags: ["Python", "Programming"],
-      isPremium: true,
-      isSaved: false,
-      releaseDate: "2023-04-25",
-    },
-    {
-      author: "Sam Johnson",
-      authorProfilePicture: "https://www.example.com/profile/samjohnson.jpg",
-      articleCoverPicture: "https://picsum.photos/id/103/400/400",
-      durationToRead: "15 minutes",
-      title: "Mastering CSS Grid Layout",
-      description: "Learn how to create complex web layouts using CSS Grid.",
-      tags: ["CSS", "Web Development"],
-      isPremium: false,
-      isSaved: true,
-      releaseDate: "2023-04-20",
-    },
-    {
-      author: "Emily Wilson",
-      authorProfilePicture: "https://www.example.com/profile/emilywilson.jpg",
-      articleCoverPicture: "https://picsum.photos/id/104/400/400",
-      durationToRead: "12 minutes",
-      title: "Getting Started with React",
-      description:
-        "A beginner's guide to building web applications with React framework.",
-      tags: ["React", "JavaScript", "Web Development"],
-      isPremium: false,
-      isSaved: true,
-      releaseDate: "2023-04-15",
-    },
-  ];
 </script>
 
 {#each articles as item, index}

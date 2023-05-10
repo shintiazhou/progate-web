@@ -1,29 +1,10 @@
 <script>
-  const writersToFollow = [
-    {
-      id: 12345,
-      name: "John Doe",
-      job: "Frontend Developer",
-      image: "https://picsum.photos/id/101/150/150",
-    },
-    {
-      id: 67890,
-      name: "Sarah Johnson",
-      job: "Backend Developer",
-      image: "https://picsum.photos/id/102/150/150",
-    },
-    {
-      id: 54321,
-      name: "Michael Smith",
-      job: "UI/UX Designer",
-      image: "https://picsum.photos/id/103/150/150",
-    },
-  ];
+  import { articleWriters } from "../../constants/article";
 </script>
 
 <div class="bg-slate-50 p-4 rounded-lg">
   <p class="mb-2">Writer to follow</p>
-  {#each writersToFollow as writer, index}
+  {#each articleWriters as writer, index}
     <a
       class="flex items-center mb-3 hover:opacity-60"
       href={"/writer/" + (index + 1)}
@@ -36,7 +17,7 @@
         />
       </div>
       <div>
-        <h3 class="font-bold">{writer.name}</h3>
+        <strong>{writer.name}</strong>
         <p class="text-gray-500 text-xs">{writer.job}</p>
       </div>
     </a>

@@ -1,17 +1,10 @@
 <script>
-  import bakti from "./bakti.png";
-  import binus from "./binus.png";
-  import cfds from "./cfds.png";
-  import cicil from "./cicil.png";
-  import gajahMada from "./gajah-mada.png";
-  import gojek from "./gojek.png";
-
-  const images = [bakti, binus, cfds, cicil, gajahMada, gojek];
+  import { collabolatorImages } from "../../constants/collabolator";
 </script>
 
 <div class=" gap-2 mt-10 overflow-x-scroll w-full px-10 scrollbar">
   <div class="flex items-center justify-center">
-    {#each images as image, index}
+    {#each collabolatorImages as image, index}
       <img
         data-aos-delay={index * 100}
         data-aos="fade-up"

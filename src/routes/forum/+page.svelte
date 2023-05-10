@@ -7,17 +7,26 @@
   import FaPlus from "svelte-icons/fa/FaPlus.svelte";
 
   import ForumItems from "../../components/forums/ForumItems.svelte";
+  import YourTopic from "../../components/articles/YourTopic.svelte";
 </script>
+
+<svelte:head>
+  <title>Forum | Progate</title>
+  <meta
+    name="description"
+    content="Join the Progate forum and engage in discussions with other learners about programming, web development, and more."
+  />
+</svelte:head>
 
 <SearchHeader />
 <div class="bg-white flex px-4 gap-10">
   <div class="flex-col w-2/10 hidden lg:flex max-w-[300px] px-6 gap-6 mt-10">
     <Levels />
-    <Topics />
+    <YourTopic />
   </div>
 
   <!-- Content -->
-  <div class="w-full mt-9">
+  <div class="w-full mt-12">
     <div class="flex gap-4">
       <input
         class="bg-[#FAFBFE] py-2 pl-2 w-full rounded-full outline-none text-black text-sm font-medium"
