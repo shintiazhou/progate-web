@@ -1,4 +1,5 @@
 <script>
+  import { hero } from "../../constants/homepage";
   import heroImg from "../../lib/homepage/hero.png";
   import Button from "../Button.svelte";
 </script>
@@ -17,16 +18,15 @@
       at Your Own Pace with Progate's Knowledge Platform
     </h1>
     <p class="md:text-lg" data-aos="fade-right" data-aos-delay="100">
-      Discover a new way to learn programming with Progate's Programming
-      Knowledge Platform. Choose from a wide variety of articles, tutorials, and
-      resources tailored to your skill level.
+      {hero.subtitle}
     </p>
     <Button
       data-aos="fade-right"
       data-aos-delay="200"
       color="primary"
       customClass="font-bold uppercase rounded-full w-fit mt-2"
-      >Start Learning</Button
+    >
+      {hero.buttonText}</Button
     >
   </div>
   <img

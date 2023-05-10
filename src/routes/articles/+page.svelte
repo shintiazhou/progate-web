@@ -7,6 +7,7 @@
   import Writers from "../../components/articles/Writers.svelte";
   import SearchHeader from "../../components/SearchHeader.svelte";
   import Footer from "../../components/Footer.svelte";
+  import YourTopic from "../../components/articles/YourTopic.svelte";
 </script>
 
 <svelte:head>
@@ -21,7 +22,7 @@
 <div class="bg-white flex px-4 gap-10">
   <div class="flex-col w-2/10 hidden lg:flex max-w-[300px] px-6 gap-6 mt-10">
     <Levels />
-    <Topics />
+    <YourTopic />
   </div>
 
   <!-- Content -->

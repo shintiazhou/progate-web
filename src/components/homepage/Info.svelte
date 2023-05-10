@@ -1,4 +1,5 @@
 <script>
+  import { info } from "../../constants/homepage";
   import image1 from "../../lib/homepage/image-1.png";
   import image2 from "../../lib/homepage/image-2.png";
 </script>
@@ -15,19 +16,17 @@
     data-aos="fade-left"
     data-aos-delay="500"
   >
-    <strong class="text-lg md:text-2xl">Simplify Your Learning</strong>
+    <strong class="text-lg md:text-2xl">{info.simplifyLearning.title}</strong>
     <p class="md:text-xl">
-      Discover the benefits of using Progate's comprehensive online learning
-      platform for programming and web development.
+      {info.subtitle}
     </p>
   </div>
 </section>
 <section class="flex flex-col-reverse md:grid grid-cols-2">
   <div class="flex flex-col justify-center p-10" data-aos="fade-right">
-    <strong class="text-lg md:text-2xl">Unlock Your Potential</strong>
+    <strong class="text-lg md:text-2xl">{info.unlockPotential.title}</strong>
     <p class="md:text-xl">
-      Elevate your programming skills and advance your career with Progate's
-      diverse learning options, quality content, and supportive community.
+      {info.unlockPotential.description}
     </p>
   </div>
   <img

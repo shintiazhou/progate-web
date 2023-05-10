@@ -1,55 +1,51 @@
 <script>
-  import img from "../../../lib/Default-welcomer.png";
+  import { page } from "$app/stores";
+  import Footer from "../../../components/Footer.svelte";
+  import SearchHeader from "../../../components/SearchHeader.svelte";
+  import { articles } from "../../../constants/article";
+  const pageId = parseInt($page.params.id || "0") - 1;
 </script>
 
-<section class="flex flex-col gap-6 mx-auto p-4">
-  <h1>How to implement google sign-up option using react OAuth2 | Google</h1>
+<svelte:head>
+  <title>{articles[pageId].title}</title>
+  <meta name="description" content={articles[pageId].description} />
+</svelte:head>
+
+<SearchHeader />
+<section
+  class="flex flex-col gap-6 mx-auto p-4 max-w-[1000px] min-h-screen mt-14"
+>
+  <p>
+    <a href="/articles" class="underline">Articles</a> / {articles[pageId]
+      .title}
+  </p>
+  <h1>{articles[pageId].title}</h1>
   <div class="author flex gap-4 items-center">
     <div class="rounded-full w-[50px] h-[50px] overflow-hidden bg-gray-400">
-      <img class="w-full h-full" src={img} alt="" />
+      <img
+        class="w-full h-full"
+        src={articles[pageId].articleCoverPicture}
+        alt={articles[pageId].title}
+      />
     </div>
     <div class="flex gap-4">
       <p class="after:w-[1px] after:h-[1px] after:border font-bold text-xs">
-        Sandika Ghalih
+        {articles[pageId].author}
       </p>
-      <p class="text-xs">June 30, 2022</p>
-      <p class="text-xs">10 min read</p>
+      <p class="text-xs">{articles[pageId].releaseDate}</p>
+      <p class="text-xs">{articles[pageId].durationToRead} Read</p>
     </div>
   </div>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam excepturi
-    deleniti doloribus provident est ullam sit tempora ex porro quos illo nemo
-    architecto beatae quidem consectetur, maiores aspernatur nostrum repellat.
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim similique a
-    cumque veritatis neque quasi suscipit repellat repellendus eligendi. Ut
-    blanditiis ipsa perspiciatis tempora sequi, tempore magnam ex impedit
-    dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
-    recusandae quas cumque facere expedita vero reprehenderit, error praesentium
-    dolore, porro sequi accusamus. Odit necessitatibus mollitia dolorem quis
-    enim hic ab.
+  <p class="text-justify text-lg">
+    {articles[pageId].body}
   </p>
 
-  <section class="summary bg-primary p-4 rounded-md">
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tempora
-      dolor modi adipisci veniam voluptate inventore voluptatibus assumenda
-      fugit sunt. Aliquid porro molestias architecto enim, vitae rerum est esse
-      sed.
-    </p>
-  </section>
-
   <section class="categories flex flex-wrap gap-2 justify-center mt-6">
-    <button class="bg-slate-200 hover:bg-slate-300 py-1 px-4 rounded-lg"
-      >HTML</button
-    >
-    <button class="bg-slate-200 hover:bg-slate-300 py-1 px-4 rounded-lg"
-      >HTML</button
-    >
-    <button class="bg-slate-200 hover:bg-slate-300 py-1 px-4 rounded-lg"
-      >HTML</button
-    >
-    <button class="bg-slate-200 hover:bg-slate-300 py-1 px-4 rounded-lg"
-      >HTML</button
-    >
+    {#each articles[pageId].tags as tag}
+      <button class="bg-slate-200 hover:bg-slate-300 py-1 px-4 rounded-lg"
+        >{tag}</button
+      >
+    {/each}
   </section>
 </section>
+<Footer />
