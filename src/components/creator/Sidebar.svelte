@@ -34,7 +34,7 @@
 </script>
 
 <aside
-  class="flex flex-col gap-4 bg-white fixed inset-y-0 left-0 h-screen overflow-hidden px-4 py-10 shadow w-[230px]"
+  class="flex flex-col gap-4 bg-white fixed inset-y-0 left-0 h-screen overflow-hidden px-4 py-10 shadow w-[300px] text-lg"
 >
   <a href="/">
     <img src={logo} alt="logo" class="w-[100px] h-[30px] object-contain" />
@@ -45,18 +45,18 @@
       {category.category}
     </small>
     {#each category.items as item}
-      <a class="ml-4 font-semibold hover:text-blue-500" href={item.href}
+      <a class="text-lg ml-4 font-semibold hover:text-blue-500" href={item.href}
         >{item.title}</a
       >
     {/each}
   {/each}
   <div class="absolute bottom-0 py-6 border-t">
     <div>
-      <strong> Tech savvy sisters </strong>
+      <strong class="text-lg"> Tech savvy sisters </strong>
       <p>woman_in_tech@wpu.com</p>
       <button
         on:click={handleLogout}
-        class="font-medium mt-3 cursor-pointer opacity-50 underline"
+        class="font-medium mt-3 cursor-pointer opacity-50 underline text-lg"
       >
         Logout
       </button>

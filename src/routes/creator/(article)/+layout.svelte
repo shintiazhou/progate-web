@@ -12,7 +12,7 @@
 
 <div>
   <ArticleSidebar />
-  <div class="ml-[230px]">
+  <div class="ml-[300px]">
     <slot />
   </div>
 </div>
