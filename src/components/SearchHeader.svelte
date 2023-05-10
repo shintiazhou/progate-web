@@ -15,7 +15,7 @@
 
 <Sidebar {toggleMenu} {isOpen} />
 <header
-  class="z-30 fixed shadow inset-x-0 top-0 flex items-center justify-between flex-wrap bg-primary py-3 px-5 md:px-10"
+  class="z-10 fixed shadow inset-x-0 top-0 flex items-center justify-between flex-wrap bg-primary py-3 px-5 md:px-10"
 >
   <div class="flex gap-4">
     <button class="text-dark" on:click={toggleMenu}>

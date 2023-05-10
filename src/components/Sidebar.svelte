@@ -20,7 +20,7 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-  class={`fixed bg-black/50 inset-0 z-10 transition-all ${
+  class={`fixed bg-black/50 inset-0 z-30 transition-all ${
     isOpen ? "block" : "hidden"
   }`}
   on:click={toggleMenu}
