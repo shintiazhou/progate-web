@@ -1,5 +1,5 @@
 # Progate
-![image](https://github.com/shintiazhou/progate-web/assets/73226439/05e644d2-f8e8-4297-bb67-9f01c1f6e5af)
+![image](https://github.com/shintiazhou/progate-web/assets/73226439/f00ab8e0-ec1b-4415-ba9b-97ae8b3e0aca)
 
 Welcome to the Progate repository! Progate is an online learning platform that offers various courses on programming, web development, and more. As part of our continuous effort to provide high-quality and comprehensive learning resources to our users, we are planning to add a programming knowledge platform to our product line. We recognize that some people prefer reading rather than watching videos, and we want to provide a platform that meets the needs of these learners. This platform will provide articles, tutorials, and resources related to programming and technology to our users.
 
