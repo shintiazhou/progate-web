@@ -9,8 +9,8 @@
     {answer.answer}
   </p>
 
-  <div class="flex items-center justify-between mt-6">
-    <div class="user flex gap-4 items-center">
+  <div class="flex flex-col md:flex-row justify-between mt-6 gap-4">
+    <div class="flex gap-4 items-center">
       <div class="w-[50px] h-[50px] bg-gray-100 rounded-full overflow-hidden">
         <img
           class="w-full h-full"

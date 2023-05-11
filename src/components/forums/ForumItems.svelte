@@ -22,16 +22,15 @@
             </button>
           {/each}
         </div>
-        <div>
-          <button
-            class="bg-[#E3EEFF] py-1 px-7 m-1 rounded-lg relative sm:inline-block"
-          >
-            <div class="absolute top-1/2 left-2 transform -translate-y-1/2">
-              <div class="w-4 h-4"><IoIosChatbubbles /></div>
-            </div>
-            Add answer
-          </button>
-        </div>
+
+        <button
+          class="bg-[#E3EEFF] px-7 m-1 rounded-lg relative sm:inline-block py-2 w-fit"
+        >
+          <div class="absolute top-1/2 left-2 transform -translate-y-1/2">
+            <div class="w-4 h-4"><IoIosChatbubbles /></div>
+          </div>
+          Add answer
+        </button>
       </div>
     </div></a
   >

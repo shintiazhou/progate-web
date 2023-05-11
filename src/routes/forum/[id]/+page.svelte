@@ -17,7 +17,7 @@
 
 <SearchHeader />
 <div class="flex flex-col lg:flex-row px-4 max-w-[1400px] mx-auto">
-  <main class="w-full px-6 mt-10">
+  <main class="w-full md:px-6 mt-10">
     <p class="mb-5 mt-4">
       <a href="/forum" class="underline">Forum</a> / {forumItems[pageId].title}
     </p>
